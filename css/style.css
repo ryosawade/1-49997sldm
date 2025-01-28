@@ -44,11 +44,11 @@ header{
 }
 
 @media only screen and (max-width: 768px) {
-    header .comtainer{
+    header .container {
         justify-content: center;
     }
     .header_menu li {
-    margin: 20 16px 0 16px;
+    margin: 20px 16px 0 16px;
     }
 }
 
@@ -96,13 +96,10 @@ header{
 }
 
 
-@media only screen and (max-width: 768px){
-    #hero {height: 460px}
-    .hero_inner p {
-    font-size: 15px;}
-.hero_inner h1 {
-    font-size: 17px;}
-
+@media only screen and (max-width: 768px) {
+    #hero { height: 460px; }
+    .hero_inner p { font-size: 15px;}
+    .hero_inner h1 { font-size: 17px;}
 }
     
     
@@ -135,8 +132,8 @@ header{
     border-radius: 20px;
 }
 .heading{
-    font-family: 'dancing Script', cursive;
-    font-size: 200px;
+    font-family: 'dancing script', cursive;
+    font-size: 170px;
     font-weight: 700;
     color: #80BA4A;
     opacity:0.1;
@@ -164,7 +161,7 @@ header{
 
 
 /*サービス*/
-#Service {
+#service {
     margin-bottom: 120px;
 }
 .service_inner {
@@ -246,7 +243,7 @@ header{
     border-radius: 20px;
 }
 .column-c {
-    background-image: url(images/bottom3.jpg);
+    background-image: url(..images/bottom3.jpg);
     background-position: center;
     background-size: cover;
     width: 24%;
@@ -254,7 +251,7 @@ header{
     border-radius: 20px;
 }
 .column-d {
-    background-image: url(images/bottom4.jpg);
+    background-image: url(..images/bottom4.jpg);
     background-position: center;
     background-size: cover;
     width: 28%;
@@ -262,8 +259,8 @@ header{
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px){
-    .column-a, column-b, column-c, column-d {
+@media only screen and (max-width: 768px) {
+    .column-a, .column-b, .column-c, .column-d {
         width: 48%;
         height: 140px;
         margin: 1%;
