@@ -1,284 +1,141 @@
-html{
-/*    font-family: 'Dancing Script', cursive;*/
-    font-family: "Noto Sans JP", serif;
-/*    font-family: 'Poppins', sans-serif;*/
-    font-weight:400;
-
-  font-style: normal;
-}
-.pop {font-family:'Poppins', sans-serif;}     
-
-.container {
-   width:90%;
-    max-width: 1120px;
-    margin:0 auto;
-    position: relative;
-}
-.flex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-/*ヘッダー*/
-header{
-    padding: 27px 0;
-}
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-}
-.logo span {
-    color: #80BA4A;
-}
-.header_menu li {
-    margin-left: 40px;
-}
-.header_menu li a {
-    transition: .3s;
-}
-.header_menu li a:hover {
-    color: #80BA4A;
-    transition: .3s;
-}
-
-@media only screen and (max-width: 768px) {
-    header .comtainer{
-        justify-content: center;
-    }
-    .header_menu li {
-    margin: 20 16px 0 16px;
-    }
-}
-
-/*メイン*/
-#hero {
-    background-image: url(../images/hero.jpg);
-    background-position: center; 
-    background-size:cover;
-    height: 540px; border-radius: 30px;
-    display:flex;
-    align-items: center; 
-    margin-bottom: 90px;
-    overflow: hidden;
-}
-
-#hero::before {
-    content:'';
-    width: 100%;
-    height: 100%;
-    background-color:#000000; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
-    z-index: 1;
-}
-        
-.hero_inner {
-    z-index: 2;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-}
-
-.hero_inner p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 16px;
-}
-
-.hero_inner h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-
-@media only screen and (max-width: 768px){
-    #hero {height: 460px}
-    .hero_inner p {
-    font-size: 15px;}
-.hero_inner h1 {
-    font-size: 17px;}
-
-}
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Salad meeting 新鮮なつながりを一つのサラダから</title>
+  
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     
+</head>
     
-/*コンセプト*/
-#concept {
-    margin-bottom: 120px;
-}
-.title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #80BA4A;
-    margin-bottom: 40px;
-}
-#concept h3 {
-    font-size: 36px;
-    font-weight; 700;
-    margin-bottom: 60px;
-}
-.column-2{
-    width: 48%
-}
-.text {
-    line-height: 2;
-}
-.concept-img{
-    background-image: url(../images/concept.jpg);
-    background-position: center; 
-    background-size:cover;
-    height: 340px; 
-    border-radius: 20px;
-}
-.heading{
-    font-family: 'dancing Script', cursive;
-    font-size: 170px;
-    font-weight: 700;
-    color: #80BA4A;
-    opacity:0.1;
-    position:absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(-30%);
-    z-index: -1;
-}
-
-@media only screen and (max-width: 768px){
-    #concept h3 {
-    font-size: 24px;
-    line-height: 1.5;
-    }
-    .column-2 {
-        width: 100%;
-    }
-    .text {
-    font-size: 15px;
-        line-height: 1.7; 
-    }
-    .concept-img {margin-top: 30px;}
-}
-
-
-/*サービス*/
-#Service {
-    margin-bottom: 120px;
-}
-.service_inner {
-    margin-bottom: 40px;
-    position: relative; 
-}
-.column-40 {
-    width: 40%;
-}
-.column-55 {
-    width: 55%;
-}
-#service img {
-    border-radius: 20px;
-}
-#service h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 24px;
-}
-
-@media only screen and (max-width: 768px){
-    .column-40 {
-        width: 100%;
-        margin-bottom: 30px;
-        
-    }
-    .column-55 {
-        width: 55%;
-        width: 100%;
-    }
-    #service h3 {
-        font-size: 17px
-}
-}
+<body>
     
+    <header>   
+      <div class="container flex pop">
+        <a href="" class="logo">
+            <span>salad </span>meeting
+        </a>
+        <nav>
+            <ul class="header_menu flex">
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#comapany">Company</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
     
-/*カンパニー*/
-#company {
-    margin-bottom: 120px;
-}
-#company dl {
-    max-width: 900px;
-    margin-left: auto;
-}
-#company dt {
-    width: 30%;
-    padding: 48px 0;
-    font-weight: 500;
-    border-bottom: solid 1px #D2ECBA;
-}
-#company dd {
-    width: 70%;
-    padding: 48px 0;
-    border-bottom: solid 1px #D2ECBA;
-}
-
-@media only screen and (max-width: 768px){
-    #company dl {
-        font-size: 13px;
-    }
-}
+    <main>
+      
+      <section id="hero" class="container">
+          <div class="hero_inner">
+            <p class="pop">Fresh connections, one salad at a time.</p>
+            <h1>新鮮なつながりを、ひとつのサラダから</h1>
+          </div>
+      </section>
+      
+      <section id="concept" class="container">
+          <div class="heading">Fresh</div>
+            <h2 class="title pop">Concept</h2>
+            <h3>健康と交流を促進する、サラダをテーマにした交流のかたち</h3>
+            <div class="flex">
+                <div class="column-2">
+                    <p class="text">
+                    「Salad Meeting」のコンセプトは健康的な食生活を促進しながら、ビジネスや社会人交流の場を提供することです。<br>
+                    <br>
+                    サラダは、栄養価の高い食材を組み合わせた健康的な食事であり、また、ビジネスや社会人交流の場での軽食としても人気があります。Salad Meetingでは、健康的な食事を通じて、ビジネスや社会人交流の場を提供し、参加者の健康と交流を促進します。<br>
+                    <br>
+                    また、サラダの材料を組み合わせるように様々な業種や分野の人々が交流し、新しいアイデアやビジネスチャンスを生み出す場でもあります。
+                    </p>
+                </div>
+                <div class="column-2 concept-img"></div>
+          </div>
+      </section>
+      
+      <section id="service" class="container">
+          <h2 class="title pop">Service</h2>
+          <div class="service_inner flex">
+              <div class="column-40">
+                  <img src="./images/service1.jpg"
+                  width=100% alt="">
+              </div>
+              <div class="column-55">
+                  <div class="heading">Business</div>
+                  <h3>サラダを提供するビジネスランチイベント</h3>
+                  <p class="text">健康的な食事を提供しながら、ビジネスや社会人交流の場を提供するイベントです。参加者は、自由にサラダの材料を選び、オリジナルのサラダを作りながら、楽しく交流することができます。</p>
+              </div>
+          </div>
+          
+          <div class="service_inner flex">
+              <div class="column-40">
+                  <img src="./images/service2.jpg"
+                       width=100% alt="">
+              </div>
+              <div class="column-55">
+                  <div class="heading">Recipe</div>
+                  <h3>サラダレシピの共有プラットフォーム</h3>
+                  <p class="text">サラダの作り方や材料の組み合わせなど、サラダに関する情報を共有するプラットフォームです。ユーザーは、自分が作ったオリジナルのサラダレシピを投稿し、他のユーザーと情報を共有することができます。</p>
+              </div>
+          </div>
+          <div class="service_inner flex">
+              <div class="column-40">
+                  <img src="./images/service3.jpg"
+                  width=100% alt="">
+              </div>
+              <div class="column-55">
+                  <div class="heading">Event</div>
+                  <h3>サラダに関するイベント情報の提供</h3>
+                  <p class="text">サラダに関するイベント情報を提供するサービスです。例えば、サラダのフェスティバルやサラダのレシピコンテストなど、サラダに関するイベント情報を提供し、ユーザーが新しいサラダのレシピを学んだり、サラダに関する情報交換をすることができます。</p>
+              </div>
+          </div>
+      </section>
+      
+      <section id="company" class="container">
+          <h2 class="title pop">Company</h2>
+          <dl class="flex">
+              <dt>会社名</dt>
+              <dd>株式会社サラダ会議 salad meeting</dd>
+              <dt>所在地</dt>
+              <dd>東京都トマト区レタス南3丁目</dd>
+              <dt>設立</dt>
+              <dd>2023年7月6日</dd>
+              <dt>代表者名</dt>
+              <dd>更田 沙羅 🥗</dd>
+          </dl>
+      </section>
+          
+      <div class="flex">
+          <div class="column-a"></div>
+          <div class="column-b"></div>
+          <div class="column-c"></div>
+          <div class="column-d"></div>
+      </div>   
+          
+    </main>
+  
+  <footer>
+      <a href="" class="logo"><span>salad</span> meeting
+      </a>
+      <div class="copyright">© salad meeting Inc.
+      </div>
     
-/*ボトム*/
-.column-a {
-    background-image: url(../images/bottom1.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-b {
-    background-image: url(../images/bottom2.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 18%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-c {
-    background-image: url(../images/bottom3.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-d {
-    background-image: url(../images/bottom4.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 28%;
-    height: 270px;
-    border-radius: 20px;
-}
+  </footer>
+  
+</body>
 
-@media only screen and (max-width: 768px){
-    .column-a, column-b, column-c, column-d {
-        width: 48%;
-        height: 140px;
-        margin: 1%;
-    }
-}
+</html>
 
-/*フッター*/
-footer {
-    text-align: center;
-    margin: 90px 0;
-}
-.copyright {
-    font-size: 12px;
-    margin-top: 40px;
-}
+
 
 
 
